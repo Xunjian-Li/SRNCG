@@ -723,11 +723,11 @@ make_polytope
 make_tregression
 ```
 
-### `src/test.jl`
+### `test/test.jl`
 
 Deterministic regression tests against frozen SRN-CG reference results.
 
-### `src/benchmark.jl`
+### `benchmark/benchmark.jl`
 
 Benchmark suite comparing SRN-CG with other optimization methods.
 
