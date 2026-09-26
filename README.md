@@ -489,13 +489,13 @@ Pkg.activate(".")
 
 using SRNCG
 
-include("src/test.jl")
+include("test/test.jl")
 ```
 
 ## Run from the command line
 
 ```bash
-julia --project=. src/test.jl
+julia --project=. test/test.jl
 ```
 
 A successful regression run should produce results consistent with:
@@ -526,7 +526,7 @@ Small wall-clock timing differences across machines are expected.
 A benchmark script is included in
 
 ```text
-src/benchmark.jl
+benchmark/benchmark.jl
 ```
 
 The current benchmark compares
@@ -583,13 +583,13 @@ Pkg.activate(".")
 
 using SRNCG
 
-include("src/benchmark.jl")
+include("benchmark/benchmark.jl")
 ```
 
 or directly from the command line:
 
 ```bash
-julia --project=. src/benchmark.jl
+julia --project=. benchmark/benchmark.jl
 ```
 
 The output contains columns of the form
@@ -682,13 +682,13 @@ The current repository is organized as
 SRNCG/
 ├── Project.toml
 ├── Manifest.toml
+├── test.jl
+├── benchmark.jl
 ├── README.md
 └── src/
     ├── SRNCG.jl
     ├── SRN_CG.jl
-    ├── problems.jl
-    ├── test.jl
-    └── benchmark.jl
+    └── problems.jl
 ```
 
 The files have the following roles.
